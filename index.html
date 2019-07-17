@@ -5,23 +5,270 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
   <style type="text/css">
   	/* Add your CSS classes below */
+    /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  top: 60px;
+  left: 0px;
+  width: 6000px;
+  backgroudVideo:full;
+}
+
+.button1 {
+  background-color: #ffd230 !important; /* Green */
+  height: 60px;
+  width: 200px;
+  border: 0 none;
+}
+.title{
+  text-align: center;
+  color:#ffd230;
+}
+.only-item{
+  font-size:32px;
+  font-weight:bold;
+  
+}
+.hero.is-primary{
+  background-color:#ffd230;
+}
+.hero.is-primary .navbar-item{
+  color: black;
+}
+
+.liverpool {
+  background-color: white !important;
+}
+.only-item {
+  font-size: 32px;
+  font-weight: bold;
+}
+.hero.is-primary {
+  background-color: #ffd230;
+}
+.hero.is-primary {
+  background-color: #ffd230;
+}
+.hero.is-primary .navbar-item {
+  color: black;
+}
+.hero-body {
+  padding-top: 20px;
+}
+.section {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.button1 {
+  color: white;
+  background-color: #ffd230 !important; /* Yellow */
+  height: 60px;
+  width: 200px;
+  border: 0 none;
+  font: bold;
+  align: right;
+}
+
+#center-box: {
+  height: 1200px;
+  width: 1200px;
+}
+
+.title {
+  font-size: 40px;
+  font-family: Arial, 
+  font-weitht: normal;
+  color: #fff;
+  text-shadow: 2px 2px 2px #333;
+}
+
+.game {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.youtup {
+  height: 500px;
+}
+.buttonbox {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.smallpicture {
+  float: left;
+  height: 180px;
+  width: 140px;
+}
+.righttext {
+  padding-left: 10px;
+  font-size: 14px;
+}
+.rightcontainer {
+  height: 180px;
+}
+#firstPage {
+  background-color: #ffd230;
+}
 
   </style>
 </head>
 
 <body>
   
-  <section class="section">
-      <div class="container">
-        <h1 class="title">sports-news</h1>
-        <h2 class="subtitle">
-          sports-news subtitle
-        </h2>
-      </div>
-    </section>
+  <section id="firstPage" class="section">
+  <div class="container content">
+    <section class="hero is-primary is-medium">
+      <section class="hero is-primary is-medium">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item only-item">
+       
+            SPORT
+          </a>
+              </div>
+      </section>
+      <section class="hero is-primary is-fullheight liverpool">
+        <div class="hero-body">
+          <div class="container" id="video-container">
+            <h1 class="title">
+              <!-- The video -->
+              <video autoplay muted loop id="myVideo">
+  <source src="https://raw.githubusercontent.com/ctt-data/sports-news/master/1080p.mp4" type="video/mp4">
+</video>
+              <!-- Optional: some overlay text to describe the video -->
 
+            </h1>
+          </div>
+
+          <div class="container content">
+            <button class="button1 only-item" onclick="showNews()" id="button">
+            NEWS
+            </button>
+
+          </div>
+      </section>
+    </section>
+</section>
+
+<div id="newsPage" style="display: none">
+  <section class="hero is-primary is-medium">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item only-item" onclick="showIndex()">
+            SPORT
+          </a>
+          </div>
+  </section>
+  <section class="hero is-primary is-fullheight liverpool">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+
+          <section class="section">
+
+            <div class="columns">
+              <div class="column" id="center-box">
+                <p class="game"><em>Enjoy the Beauty of the Game</em></p>
+                <div class="buttonbox">
+                  <button class="button1" onclick="showpic()" id="button">
+  <div class="select">
+ <select>
+         <option>
+ <a href="https://www.instagram.com/accounts/login/">Instagram</a>
+         </option>
+         <option>
+ <a href="https://twitter.com/login/">Twitter</a>
+          </option>
+  </select>
+</div>
+  SHARE 
+ </button>
+                </div>
+                <div class="box" style="height: 1000px">
+                  <iframe class="youtup" width="1900" height="1000" src="https://www.youtube.com/embed/evyno2kahOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <p>Liverpool are champions of Europe for the sixth time after a 2-0 defeat of Premier League rivals Tottenham in Madrid. An early Mohamed Salah penalty and Divock Origi late strike gave Liverpool victory in Marid </p>
+                </div>
+
+              </div>
+              <div class="column is-narrow">
+                <div class="box" style="width: 500px;">
+                  <div class="rightcontainer">
+                    
+                  </div>
+                  <div class="rightcontainer">
+                    <div class="smallpicture">
+                      <img height=100px width=200px src="https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/14DE1/production/_106937458_gettyimages-611548386.jpg" </img>
+                    </div>
+
+                    <div class="righttext">
+                      <p>Real Madrid have agreed a deal to sign forward Eden Hazard from Chelsea for a fee that could exceed £150m.</p>
+
+                      <a href="https://www.bbc.com/sport/football/48548361" target="_blank">BBC SPORT!!</a>
+                    </div>
+                  </div>
+                  <div class="rightcontainer">
+                    <div class="smallpicture">
+                      <img height=100px width=200px src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/A77B/production/_107857824_lk1.jpg" </img>
+                    </div>
+                    <div class="righttext">
+                      <p>Arsenal's Laurent Koscielny is risking his legacy at the club by refusing to travel on the pre-season tour of the US, says Gunners legend Ian Wright.</p>
+                    </div>
+                  </div>
+                  <div class="rightcontainer">
+                    <div class="smallpicture">
+                      <img height=100px width=200px src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/86B5/production/_107858443_ag1.jpg" </img>
+                    </div>
+                    <div class="righttext">
+                      <p>The worst-kept secret in Spanish football was confirmed on Friday when Barcelona paid Atletico Madrid 120m euros (£107.7m) to sign French World Cup-winning forward Antoine Griezmann. <a href="https://www.bbc.com/sport/football/48972347"
+                          target="_blank">BBC SPORT!!</a></p>
+                    </div>
+                  </div>
+                  <div class="rightcontainer">
+                    <div class="smallpicture">
+                      <img height=100px width=200px src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/14A24/production/_107861548_dl2.jpg" </img>
+                    </div>
+                    <div class="righttext">
+                      <p>
+                        Ajax have left captain Matthijs de Ligt out of their squad for a training camp in Austria as the player is "awaiting a possible transfer".<a href="https://www.bbc.com/sport/football/48974619" target="_blank">BBC SPORT!!</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="rightcontainer">
+                    <div class="smallpicture">
+                      <img height=100px width=200px src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/3AF8/production/_107869051_mount.jpg" </img>
+                    </div>
+                    <div class="righttext">
+                      <p>Frank Lampard won his first game as Chelsea manager as they beat St Patrick's Athletic 4-0 in a pre-season friendly in Dublin.<a href="https://www.bbc.com/sport/football/48976018" target="_blank">BBC SPORT!!</a></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </section>
+      </div>
+    </div>
+  </section>
+  </div>
   <script src="js/scripts.js">
   	/* Add your Javascript below */
+    function showNews() {
+  document.getElementById("firstPage").style.display ="none";
+  document.getElementById("newsPage").style.display="block";
+}
+function showIndex() {
+  document.getElementById("firstPage").style.display ="block";
+  document.getElementById("newsPage").style.display="none";
+}
   </script>
 </body>
 </html>
